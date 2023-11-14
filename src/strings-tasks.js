@@ -476,7 +476,7 @@ function extractEmails(str) {
  *
  */
 function encodeToRot13(str) {
-  return str.replace(/[a-zA-Z]/g, function (char) {
+  return str.replace(/[a-zA-Z]/g, (char) => {
     const isUpperCase = char === char.toUpperCase();
     const shift = isUpperCase ? 65 : 97;
     return String.fromCharCode(
